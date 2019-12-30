@@ -7,6 +7,12 @@ body{
   box-sizing: border-box;
 }
 
+
+.the-header{
+  background-color: #f43c2f
+}
+
+
 ul{
   margin:0;
   padding:0;
@@ -24,6 +30,10 @@ ul li:nth-child(odd){
   background-color: #f6f9f3;
 }
 
+ul li:hover{
+  background-color: #ddd
+}
+
 ul li.checked::before{
   content:' ';
   position: absolute;
@@ -37,6 +47,13 @@ ul li.checked::before{
   width: 10px;
 }
 
-ul li:hover{
-  background-color: #ddd;
+.close{
+  position: absolute;
+  right:0;
+  top:0;
+  padding:10px 15px 10px 15px;
+}
+
+.close:hover{
+  background:#f43c2f
 }
