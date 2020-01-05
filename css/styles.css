@@ -9,9 +9,39 @@ body{
 
 
 .the-header{
-  background-color: #f43c2f
+  background-color: #993366;
+  padding: 30px 42px;
+  color: white;
+  text-align: center;
 }
 
+.the-header:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#the-input{
+  width: 70%;
+  padding: 15px;
+  float: left;
+  font-size: 15px;
+}
+
+.create-button{
+  width:30%;
+  background-color: #cecece;
+  padding: 15px;
+  color:#282828;
+  float: left;
+  text-align: center;
+  font-size:18px;
+  cursor: pointer;
+}
+
+.create-button:hover{
+  background-color: #ddd;
+}
 
 ul{
   margin:0;
