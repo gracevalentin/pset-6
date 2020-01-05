@@ -64,6 +64,10 @@ ul li:hover{
   background-color: #ddd
 }
 
+ul li.checked{
+  background: #888
+}
+
 ul li.checked::before{
   content:' ';
   position: absolute;

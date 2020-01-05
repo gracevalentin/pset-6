@@ -35,4 +35,9 @@ function createNewElement(){
     }
 }
 
-createNewElement();
+var ulList = document.querySelector('ul')
+ulList.addEventListener('click', function(event){
+  if(event.target.tagName === "LI"){
+    event.target.classList.toggle('checked');
+  }
+}
