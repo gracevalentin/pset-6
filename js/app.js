@@ -2,8 +2,6 @@
 
 var closeButton = document.getElementsByClassName("close")
 
-
-
 //creating to-dos function
 
 function createNewElement(){
@@ -39,5 +37,5 @@ function createNewElement(){
   ulList.addEventListener('click', function(event){
     if(event.target.tagName === "LI"){
       event.target.classList.toggle('checked');
-  }
-}
+    }
+  });
