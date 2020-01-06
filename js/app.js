@@ -18,9 +18,9 @@ function createNewElement(){
     document.getElementById("the-input").value = "";
 
     var thePanTag = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00d7");
+    var xMark = document.createTextNode("\u00d7");
     thePanTag.className = "close";
-    thePanTag.appendChild(txt);
+    thePanTag.appendChild(xMark);
     li.appendChild(thePanTag)
 
 //removes items when clicked on span close button

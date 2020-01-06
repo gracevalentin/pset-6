@@ -68,6 +68,12 @@ ul li:hover{
   background-color: #ddd
 }
 
+.checked{
+  background: #00cc66;
+  color: white;
+  text-decoration: line-through;
+}
+
 ul li.checked{
   background: #00cc66;
   color: white;
