@@ -1,12 +1,27 @@
-//close button
+//close and priority buttons
 
 var closeButton = document.getElementsByClassName("close")
+var priorityButton = document.getElementsByClassName("priority")
+
+
+const todoItems = [];
 
 //creating to-dos function
 
 function createNewElement(){
     var li = document.createElement('li');
+    li.id = todoItems.length;
     var theInputValue = document.getElementById("the-input").value;
+
+
+    todoItems.push({
+      id: todoItems.length,
+      content: theInputValue,
+      priority: "low",
+      complete: false
+    });
+
+
     var textNode = document.createTextNode(theInputValue);
     li.appendChild(textNode);
     if(theInputValue == ''){
@@ -15,7 +30,9 @@ function createNewElement(){
       document.getElementById("the-ul").appendChild(li);
     }
 
-    document.getElementById("the-input").value = "";
+
+  //document.getElementById("the-input").value = "";
+
 
     var thePanTag = document.createElement("SPAN");
     var xMark = document.createTextNode("\u00d7");
@@ -23,11 +40,22 @@ function createNewElement(){
     thePanTag.appendChild(xMark);
     li.appendChild(thePanTag)
 
+
+stuff below doesnt work!!
+
+    var exclamationPoint = document.createTextNode("!");
+    thePanTag.className = "priority";
+    thePanTag.appendChild(exclamationPoint);
+    li.appendChild(thePanTag)
+
 //removes items when clicked on span close button
 
     for (i = 0; i < closeButton.length; i++) {
      closeButton[i].onclick = function() {
        var theDiv = this.parentElement;
+       console.log(theDiv.id);
+       todoItems.splice(theDiv.id, 1);
+
        theDiv.style.display = "none";
      }
     }

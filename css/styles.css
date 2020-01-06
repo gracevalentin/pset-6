@@ -94,6 +94,7 @@ ul li.checked::before{
 }
 
 .close{
+  align-items: right;
   position: absolute;
   right:0;
   top:0;
@@ -101,5 +102,19 @@ ul li.checked::before{
 }
 
 .close:hover{
-  background:#f43c2f
+  background:#f43c2f;
+}
+
+stuff below doesnt work!!
+
+.priority{
+  align-items: right;
+  position: absolute;
+  right:0;
+  top:0;
+  padding:10px 15px 10px 15px;
+}
+
+.priority:hover{
+  background:blue;
 }
