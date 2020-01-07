@@ -7,7 +7,6 @@ body{
   box-sizing: border-box;
 }
 
-
 .the-header{
   background-color: #4949d0;
   padding: 30px 42px;
@@ -105,16 +104,13 @@ ul li.checked::before{
   background:#f43c2f;
 }
 
-stuff below doesnt work!!
-
-.priority{
+.priority {
   align-items: right;
   position: absolute;
   right:0;
   top:0;
   padding:10px 15px 10px 15px;
 }
-
-.priority:hover{
-  background:blue;
+.priority:hover {
+    background: blue;
 }
