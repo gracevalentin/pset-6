@@ -10,6 +10,7 @@ var priorityButton = document.getElementsByClassName("priority")
 
 const todoItems = [];
 
+
 // add new items to array
 
 function addItem() {
@@ -37,7 +38,7 @@ function renderItems() {
     const remove = document.createElement("span");
 
     li.id = i;
-    li.onclick = toggleCompletion;
+    content.onclick = toggleCompletion;
     li.className = todoItems[i].complete === true ? "checked" : "";
 
     priority.id = i;
