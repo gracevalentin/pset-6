@@ -42,11 +42,16 @@ body{
 
 .create-button:hover{
   background-color: #ddd;
+
+
+
+
+
 }
 
 ul{
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 ul li{
@@ -56,7 +61,7 @@ ul li{
   background-color: #cecece;
   list-style-type: none;
   cursor: pointer;
-  padding:10px 6px 10px 40px;
+  padding:10px 6px 10px 60px;
 }
 
 ul li:nth-child(odd){
@@ -67,19 +72,27 @@ ul li:hover{
   background-color: #ddd
 }
 
-.checked{
-  background: #00cc66;
+li.checked:nth-child(odd){
+  background-color: #00cc66;
   color: white;
   text-decoration: line-through;
 }
 
-ul li.checked{
-  background: #00cc66;
+li.checked:nth-child(even){
+  background-color: #00cc66;
   color: white;
   text-decoration: line-through;
 }
+
+
+
+
+
+
+
 
 .close{
+  background: #f43c2f;
   align-items: right;
   position: absolute;
   right:0;
@@ -92,12 +105,14 @@ ul li.checked{
 }
 
 .priority {
+  background: #0066ff;
   align-items: left;
   position: absolute;
   left:0;
   top:0;
   padding:10px 15px 10px 15px;
 }
+
 .priority:hover {
-    background: blue;
+  background: #0066ff;
 }
